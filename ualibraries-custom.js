@@ -13,6 +13,6 @@ $("div.Logo[size='small'] img").css('cursor', 'pointer').attr('title', 'UA Libra
     $("style").append("div.previewRightArrow {right: 350px;}");
  
     var topic_link_to_insert = '<!-- GRW --> | <a class="sourceLink customPrimaryLie?<
-    $(text_to_insert).insertBefore("div.ng-scope[link='www.library.arizona.edu/ask']");
+    $(text_to_insert).insertBefore("div.chat");
 
 });
