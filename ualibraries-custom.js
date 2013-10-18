@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-  $("div.Logo[size='small'] img").css('cursor', 'pointer').attr('title', 'UA Libraries homepage').attr('alt', 'UA Libraries homepage');
-
   $("div.Logo[size='small'] img").click(function() {
     window.location.href = 'http://www.library.arizona.edu';
   });
