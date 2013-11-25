@@ -22,5 +22,11 @@ $(document).ready(function() {
    */
   $("style").append("div.rightBar {width: 350px; max-width: 350px; min-width: 350px;}");
   $("style").append("div.previewRightArrow {right: 350px;}");
+
+  /**
+  * Experimenting with writing styles to <head>
+  */
+
+  $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/test-write-styles/ualibraries-custom.css">').appendTo( $('head') );
  
 });
