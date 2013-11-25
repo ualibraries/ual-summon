@@ -22,5 +22,23 @@ $(document).ready(function() {
    */
   $("style").append("div.rightBar {width: 350px; max-width: 350px; min-width: 350px;}");
   $("style").append("div.previewRightArrow {right: 350px;}");
+
+  /**
+  * Experimenting with writing styles to <head>
+  */
+  $('<style type="text/css">'+
+    'body{'+
+      'background:cornflowerblue;'+
+      'text-align:center;'+
+    '}'+
+    '.one{'+
+      'width:100px;'+
+      'height:100px;'+
+      'margin:20px auto;'+
+      'background:goldenrod;'+
+      'padding:10px;'+
+      'text-align:center;'+
+    '}'+
+  '</style>').appendTo($('head'));
  
 });
