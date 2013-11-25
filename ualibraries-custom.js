@@ -27,10 +27,10 @@ $(document).ready(function() {
   * Experimenting with writing styles to <head>
   */
   $('<style type="text/css">'+
-    'body{'+
-      'background:cornflowerblue;'+
-      'text-align:center;'+
-    '}'+
+    // 'body{'+
+    //   'background:cornflowerblue;'+
+    //   'text-align:center;'+
+    // '}'+
     '.one{'+
       'width:100px;'+
       'height:100px;'+
