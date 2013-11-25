@@ -41,6 +41,6 @@ $(document).ready(function() {
     '}'+
   '</style>').appendTo($('head'));
 
-  $('<link rel="stylesheet" href="http://www.testing123.com/style.css">').appendTo( $('head') );
+  $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/test-write-styles/ualibraries-custom.css">').appendTo( $('head') );
  
 });
