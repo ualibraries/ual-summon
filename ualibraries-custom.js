@@ -26,20 +26,6 @@ $(document).ready(function() {
   /**
   * Experimenting with writing styles to <head>
   */
-  $('<style type="text/css">'+
-    // 'body{'+
-    //   'background:cornflowerblue;'+
-    //   'text-align:center;'+
-    // '}'+
-    '.one{'+
-      'width:100px;'+
-      'height:100px;'+
-      'margin:20px auto;'+
-      'background:goldenrod;'+
-      'padding:10px;'+
-      'text-align:center;'+
-    '}'+
-  '</style>').appendTo($('head'));
 
   $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/test-write-styles/ualibraries-custom.css">').appendTo( $('head') );
  
