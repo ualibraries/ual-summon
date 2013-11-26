@@ -8,7 +8,7 @@ $(document).ready(function() {
     .addClass('ng-scope')
   ;
   // Create the link itself.
-  var $start_over_link = $('<a>Start Over</a>')
+  var $start_over_link = $('<a id="start-over">Start Over</a>')
     .attr('href', 'http://arizona.summon.serialssolutions.com/')
     .addClass('ng-scope ng-binding custom')
     //.attr('target', '_blank')
@@ -16,6 +16,10 @@ $(document).ready(function() {
   ;
   // Insert the HTML.
   $start_over_container.insertBefore("div.chat");
+
+  $start_over_link.click(function(){
+    $('.form-inline')[0].reset();
+  });
 
   /**
    * Change width of right sidebar.
