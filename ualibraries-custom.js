@@ -17,8 +17,13 @@ $(document).ready(function() {
   // Insert the HTML.
   $start_over_container.insertBefore("div.chat");
 
-  $start_over_link.click(function(){
+  $('#start-over').click(function(){
     $('.form-inline')[0].reset();
+    $(':input','.form-inline')
+     .not(':button, :submit, :reset, :hidden')
+     .val('')
+     .removeAttr('checked')
+     .removeAttr('selected');
   });
 
   /**
