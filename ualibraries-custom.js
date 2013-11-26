@@ -10,6 +10,7 @@ $(document).ready(function() {
   // Create the link itself.
   var $start_over_link = $('<a id="start-over">Start Over</a>')
     .attr('href', 'http://arizona.summon.serialssolutions.com/')
+    .attr('ng-click','advanced.clearForm()')
     .addClass('ng-scope ng-binding custom')
     //.attr('target', '_blank')
     .appendTo($start_over_container)
@@ -17,14 +18,14 @@ $(document).ready(function() {
   // Insert the HTML.
   $start_over_container.insertBefore("div.chat");
 
-  $('#start-over').click(function(){
-    $('.form-inline')[0].reset();
-    $(':input','.form-inline')
-     .not(':button, :submit, :reset, :hidden')
-     .val('')
-     .removeAttr('checked')
-     .removeAttr('selected');
-  });
+  // $('#start-over').click(function(){
+  //   $('.form-inline')[0].reset();
+  //   $(':input','.form-inline')
+  //    .not(':button, :submit, :reset, :hidden')
+  //    .val('')
+  //    .removeAttr('checked')
+  //    .removeAttr('selected');
+  // });
 
   /**
    * Change width of right sidebar.
