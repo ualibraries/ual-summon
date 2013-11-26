@@ -31,6 +31,6 @@ $(document).ready(function() {
   * Experimenting with writing styles to <head>
   */
 
-  $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/test-write-styles/ualibraries-custom.css">').appendTo( $('head') );
+  $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css">').appendTo( $('head') );
  
 });
