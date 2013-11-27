@@ -1,0 +1,17 @@
+.header{
+	min-height: 100px;
+	&.navbar-fixed-top{
+		position: relative;
+	}
+}
+.siteHeader{
+	position: relative;
+}
+.Logo{
+	padding: 0;
+	height: 75px;
+	line-height: 75px;
+}
+#main{
+	padding-top: 0 !important;
+}
