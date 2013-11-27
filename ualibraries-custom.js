@@ -1,4 +1,6 @@
 $(document).ready(function() {
+  $('<link rel="stylesheet" type="text/css" href="http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/css/ua-web-branding.css">').appendTo( $('head') );
+  
   var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark dark-gray">'+
   '<a class="ua-home asdf" href="http://arizona.edu" title="The University of Arizona">'+
     '<p>The University of Arizona</p>'+
