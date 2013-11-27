@@ -1,3 +1,20 @@
 /* line 1, ualibraries-custom.scss */
-.test {
-  background: red; }
+.header {
+  min-height: 100px; }
+  /* line 3, ualibraries-custom.scss */
+  .header.navbar-fixed-top {
+    position: relative; }
+
+/* line 7, ualibraries-custom.scss */
+.siteHeader {
+  position: relative; }
+
+/* line 10, ualibraries-custom.scss */
+.Logo {
+  padding: 0;
+  height: 75px;
+  line-height: 75px; }
+
+/* line 15, ualibraries-custom.scss */
+#main {
+  padding-top: 0 !important; }
