@@ -6,7 +6,7 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
     '<p>The University of Arizona</p>'+
   '</a>'+
 '</div>');
-$('.search').prepend($ua_banner);
+$('.header').prepend($ua_banner);
   /** 
    * Insert a "Start Over" link before the chat link.
    */
