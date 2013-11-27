@@ -15,7 +15,7 @@ $('.header').prepend($ua_banner);
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/reset-form-link-2/ualibraries-custom.css">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css">').appendTo( $('head') );
 
 /**
  * Change width of right sidebar.
