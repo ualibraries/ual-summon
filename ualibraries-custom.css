@@ -8,13 +8,18 @@
 /* line 7, ualibraries-custom.scss */
 .siteHeader {
   position: relative; }
-
-/* line 10, ualibraries-custom.scss */
-.Logo {
-  padding: 0;
-  height: 75px;
-  line-height: 75px; }
+  /* line 9, ualibraries-custom.scss */
+  .siteHeader .Logo {
+    padding: 0;
+    height: 75px;
+    line-height: 75px; }
 
 /* line 15, ualibraries-custom.scss */
 #main {
   padding-top: 0 !important; }
+
+/* line 20, ualibraries-custom.scss */
+.searchBox .Logo a {
+  display: block;
+  width: 312px;
+  margin: 0 auto; }

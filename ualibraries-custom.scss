@@ -6,12 +6,21 @@
 }
 .siteHeader{
 	position: relative;
-}
-.Logo{
-	padding: 0;
-	height: 75px;
-	line-height: 75px;
+	.Logo{
+		padding: 0;
+		height: 75px;
+		line-height: 75px;
+	}
 }
 #main{
 	padding-top: 0 !important;
+}
+.searchBox{
+	.Logo{
+		a{
+			display: block;
+			width: 312px;
+			margin: 0 auto;
+		}
+	}
 }
