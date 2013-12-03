@@ -1,3 +1,27 @@
+@import 'compass';
+// Mixins & @extends
+%replace-text, .replace-text{
+  &:before{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+  }
+}
+@mixin hd-bp ( $ratio: 1.3 ) {
+  @media (-o-min-device-pixel-ratio: #{$ratio}/1),
+         (-webkit-min-device-pixel-ratio: #{$ratio}),
+         (min-resolution: #{round(96 * $ratio)}dpi) {
+    @content;
+  }
+}
+@mixin sd-bp ( $ratio: 1.3 ) {
+  @media (-o-max-device-pixel-ratio: #{$ratio}/1),
+         (-webkit-max-device-pixel-ratio: #{$ratio}),
+         (max-resolution: #{round(96 * $ratio)}dpi) {
+    @content;
+  }
+}
 .header{
 	min-height: 100px;
 	&.navbar-fixed-top{
@@ -21,6 +45,36 @@
 			display: block;
 			width: 312px;
 			margin: 0 auto;
+		}
+	}
+}
+
+#ua-web-branding-banner-v1{
+	width: 100%;
+	color: #fff;
+	&.dark-gray{
+		background-color: #999;
+	}
+	.ua-home{
+		@include inline-block;
+		width: 100%;
+		max-width: 353px;
+		p{
+			@extend %replace-text;
+			background-size: 100%;
+		}
+	}
+	&.twenty-five{
+		height: 25px;
+		.ua-home{
+			p{
+				margin: 0 10px;
+				height: 22px;
+				background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.png) no-repeat 0px 0px;
+				@include hd-bp() {
+					background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.svg) no-repeat 0px 0px;
+				}
+			}
 		}
 	}
 }
