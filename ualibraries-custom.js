@@ -3,24 +3,25 @@ $(document).ready(function() {
 /**
  * UA Banner styles and markup
  */
-
+var $header = $('.header');
 var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark dark-gray twenty-five">'+
   '<a class="ua-home asdf" href="http://arizona.edu" title="The University of Arizona">'+
     '<p>The University of Arizona</p>'+
   '</a>'+
 '</div>');
-$('.header').prepend($ua_banner);
+$header.prepend($ua_banner);
 
-var $header = $('.header');
-var $header_height = $header.css('height');
+var $header_height = $header.height();
+var $unauth_alert_height = $('.vpnBanner.customAuthBanner').height();
 // var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
 // var $main = $('#main');
 // $header.css('min-height',$header_height);
 // $adv_search_form.css('top',$header_height);
 // $main.css('padding-top',$header_height);
 $('<style>'+
-  '.fixed.fullDialog.advancedSearchDialog{top:' + $header_height + ' !important;}'+
-  '#main{padding-top:' + $header_height + ' !important;}'+
+  '.fixed.fullDialog{top:' + $header_height + 'px !important;}'+
+  '#main{padding-top:' + $header_height + 'px !important;}'+
+  '.header{padding-top:' + $unauth_alert_height + 'px;}'+
   '</style>'
   ).appendTo( $('head') );
 /**
