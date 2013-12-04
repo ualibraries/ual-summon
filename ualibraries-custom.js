@@ -33,4 +33,5 @@ $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ual
 // $("style").append("div.rightBar {width: 350px; max-width: 350px; min-width: 350px;}");
 // $("style").append("div.previewRightArrow {right: 350px;}");
  
+ console.log($header.height());
 });
