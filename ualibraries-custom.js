@@ -12,6 +12,11 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
 '</div>');
 
 $alert_banner.after($ua_banner);
+
+if($alert_banner.css('display') == 'block'){
+  $header.addClass('alert');
+}
+
 var $header_height = $header.height();
 // var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
 // var $main = $('#main');
