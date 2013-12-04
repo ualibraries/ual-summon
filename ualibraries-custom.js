@@ -4,12 +4,13 @@ $(document).ready(function() {
  * UA Banner styles and markup
  */
 var $header = $('.header');
+var $alert_banner = $('.vpnBanner.customAuthBanner');
 var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark dark-gray twenty-five">'+
   '<a class="ua-home asdf" href="http://arizona.edu" title="The University of Arizona">'+
     '<p>The University of Arizona</p>'+
   '</a>'+
 '</div>');
-$header.prepend($ua_banner);
+$alert_banner.after($ua_banner);
 
 var $header_height = $header.height();
 // var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
@@ -33,5 +34,6 @@ $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ual
 // $("style").append("div.rightBar {width: 350px; max-width: 350px; min-width: 350px;}");
 // $("style").append("div.previewRightArrow {right: 350px;}");
  
- console.log($header.height());
+console.log('height():'+$header.height());
+console.log('css height:'+$header.css('height'));
 });
