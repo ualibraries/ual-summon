@@ -39,10 +39,10 @@
 
 /* line 59, ualibraries-custom.scss */
 .fixed.fullDialog {
-  top: 100px; }
+  top: 100px !important; }
   /* line 61, ualibraries-custom.scss */
   .off-campus-alert .fixed.fullDialog {
-    top: 125px; }
+    top: 125px !important; }
 
 /* line 65, ualibraries-custom.scss */
 #ua-web-branding-banner-v1 {
