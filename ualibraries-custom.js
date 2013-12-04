@@ -11,10 +11,18 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
 '</div>');
 $('.header').prepend($ua_banner);
 
+var $header = $('.header');
+var $header_height = $header.css('height');
+var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
+var $main = $('#main');
+$header.css('min-height',$header_height);
+$adv_search_form.css('top',$header_height);
+$main.css('padding-top',$header_height);
+
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120313">').appendTo( $('head') );
+//$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120413">').appendTo( $('head') );
 
 /**
  * Change width of right sidebar.
