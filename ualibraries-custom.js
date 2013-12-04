@@ -10,8 +10,8 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
     '<p>The University of Arizona</p>'+
   '</a>'+
 '</div>');
-$alert_banner.after($ua_banner);
 
+$alert_banner.after($ua_banner);
 var $header_height = $header.height();
 // var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
 // var $main = $('#main');
@@ -26,7 +26,7 @@ $('<style>'+
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120413-5">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120413-6">').appendTo( $('head') );
 
 /**
  * Change width of right sidebar.
