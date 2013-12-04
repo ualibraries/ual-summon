@@ -14,7 +14,7 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
 $alert_banner.after($ua_banner);
 
 if($alert_banner.css('display') == 'block'){
-  $header.addClass('alert');
+  $header.addClass('off-campus-alert');
 }
 
 var $header_height = $header.height();
