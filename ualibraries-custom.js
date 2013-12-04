@@ -19,7 +19,6 @@ var $header_height = $header.css('height');
 // $adv_search_form.css('top',$header_height);
 // $main.css('padding-top',$header_height);
 $('<style>'+
-  '.header{min-height:' + $header_height + ' !important;}'+
   '.fixed.fullDialog.advancedSearchDialog{top:' + $header_height + ' !important;}'+
   '#main{padding-top:' + $header_height + ' !important;}'+
   '</style>'
