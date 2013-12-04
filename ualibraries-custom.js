@@ -12,7 +12,6 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
 $header.prepend($ua_banner);
 
 var $header_height = $header.height();
-var $unauth_alert_height = $('.vpnBanner.customAuthBanner').height();
 // var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
 // var $main = $('#main');
 // $header.css('min-height',$header_height);
@@ -21,7 +20,6 @@ var $unauth_alert_height = $('.vpnBanner.customAuthBanner').height();
 $('<style>'+
   '.fixed.fullDialog{top:' + $header_height + 'px !important;}'+
   '#main{padding-top:' + $header_height + 'px !important;}'+
-  '.header{padding-top:' + $unauth_alert_height + 'px;}'+
   '</style>'
   ).appendTo( $('head') );
 /**
