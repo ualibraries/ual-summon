@@ -13,21 +13,24 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
 
 $alert_banner.after($ua_banner);
 
+var $header_height = $header.height();
+var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
+var $main = $('#main');
+
 if($alert_banner.css('display') == 'block'){
-  $header.addClass('off-campus-alert');
+  $('body').addClass('off-campus-alert');
 }
 
-var $header_height = $header.height();
-// var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
-// var $main = $('#main');
+
 // $header.css('min-height',$header_height);
 // $adv_search_form.css('top',$header_height);
 // $main.css('padding-top',$header_height);
-$('<style>'+
-  '.fixed.fullDialog{top:' + $header_height + 'px !important;}'+
-  '#main{padding-top:' + $header_height + 'px !important;}'+
-  '</style>'
-  ).appendTo( $('head') );
+
+// $('<style>'+
+//   '.fixed.fullDialog{top:' + $header_height + 'px !important;}'+
+//   '#main{padding-top:' + $header_height + 'px !important;}'+
+//   '</style>'
+//   ).appendTo( $('head') );
 /**
 * Write a link to our custom CSS file
 */

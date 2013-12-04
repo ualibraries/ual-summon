@@ -54,6 +54,18 @@
 	padding: 0 0 0 2em;
 	line-height: 25px;
 }
+#main{
+	padding-top: 100px !important;
+	.off-campus-alert &{
+		padding-top: 125px !important;
+	}
+}
+.fixed.fullDialog{
+	top: 100px;
+	.off-campus-alert &{
+		padding-top: 125px;
+	}
+}
 #ua-web-branding-banner-v1{
 	width: 100%;
 	color: #fff;
