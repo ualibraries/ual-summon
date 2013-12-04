@@ -25,7 +25,7 @@
 .header{
 	min-height: 100px;
 	&.navbar-fixed-top{
-		position: relative;
+		
 	}
 }
 .siteHeader{
@@ -35,9 +35,6 @@
 		height: 75px;
 		line-height: 75px;
 	}
-}
-#main{
-	padding-top: 0 !important;
 }
 .searchBox{
 	.Logo{
