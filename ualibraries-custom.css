@@ -42,7 +42,7 @@
   top: 100px; }
   /* line 61, ualibraries-custom.scss */
   .off-campus-alert .fixed.fullDialog {
-    padding-top: 125px; }
+    top: 125px; }
 
 /* line 65, ualibraries-custom.scss */
 #ua-web-branding-banner-v1 {
