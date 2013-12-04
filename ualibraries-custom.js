@@ -36,5 +36,5 @@ $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ual
  
 console.log('height():'+$header.height());
 console.log('css height:'+$header.css('height'));
-console.log('alert banner height: '+$alert_banner.height());
+console.log('alert banner display: '+$alert_banner.css('display'));
 });
