@@ -62,6 +62,24 @@
 		top: 125px !important;
 	}
 }
+.siteLinks{
+	a{
+		&:hover{
+			text-decoration: none;
+		}
+	}
+	a.help{
+		&:before{
+			margin-right: 3px;
+			font-family: 'FontAwesome';
+			content: "\f059";
+		}
+		&:after{
+			content:"";
+			margin: 0;
+		}
+	}
+}
 #ua-web-branding-banner-v1{
 	width: 100%;
 	color: #fff;
