@@ -63,6 +63,9 @@
 	}
 }
 .siteLinks{
+	height: 32px;
+	top: 50%;
+	margin-top: -16px;
 	a{
 		&:hover{
 			text-decoration: none;
@@ -77,6 +80,13 @@
 		&:after{
 			content:"";
 			margin: 0;
+		}
+	}
+	.chat{
+		a{
+			p{
+				display: none;
+			}
 		}
 	}
 }
