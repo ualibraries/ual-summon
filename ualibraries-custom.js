@@ -34,7 +34,7 @@ if($alert_banner.css('display') == 'block'){
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120413-13">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120513-1">').appendTo( $('head') );
 
 /**
  * Change width of right sidebar.
