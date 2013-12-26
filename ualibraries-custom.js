@@ -21,27 +21,22 @@ if($alert_banner.css('display') == 'block'){
   $('body').addClass('off-campus-alert');
 }
 
+/**
+ * Rewrite help link
+ */
+var $help_link = $('.siteLinks div:nth-child(2n)');
 
-// $header.css('min-height',$header_height);
-// $adv_search_form.css('top',$header_height);
-// $main.css('padding-top',$header_height);
+$help_link.html('<a href="http://www.library.arizona.edu/search-find-summon/help" class="help" title="Summon Help">Help</a>');
 
-// $('<style>'+
-//   '.fixed.fullDialog{top:' + $header_height + 'px !important;}'+
-//   '#main{padding-top:' + $header_height + 'px !important;}'+
-//   '</style>'
-//   ).appendTo( $('head') );
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=120513-2">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=122613-1">').appendTo( $('head') );
 
 /**
  * Change width of right sidebar.
  */
-// $("style").append("div.rightBar {width: 350px; max-width: 350px; min-width: 350px;}");
-// $("style").append("div.previewRightArrow {right: 350px;}");
- 
+
 console.log('height():'+$header.height());
 console.log('css height:'+$header.css('height'));
 console.log('alert banner display: '+$alert_banner.css('display'));
