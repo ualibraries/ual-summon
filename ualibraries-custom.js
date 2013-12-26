@@ -31,7 +31,7 @@ $help_link.html('<a href="http://www.library.arizona.edu/search-find-summon/help
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=122613-1">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=122613-2">').appendTo( $('head') );
 
 /**
  * Change width of right sidebar.
