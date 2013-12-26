@@ -26,7 +26,7 @@ if($alert_banner.css('display') == 'block'){
  */
 var $help_link = $('.siteLinks div:nth-child(2n)');
 
-$help_link.html('<a href="http://www.library.arizona.edu/search-find-summon/help" class="help" title="Summon Help">Help</a>');
+$help_link.html('<a href="http://www.library.arizona.edu/search-find/summon/help" class="help" title="Summon Help">Help</a>');
 
 /**
 * Write a link to our custom CSS file
