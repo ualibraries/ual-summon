@@ -45,7 +45,7 @@ console.log('alert banner display: '+$alert_banner.css('display'));
 /**
  * Summon search patch.
  */
- 
+$('.vpnBanner a').attr('href','javascript:libLogin();');
 function libLogin( ) {
 var libThisURL = window.location.hash.substring( 1 );
 libThisURL = libThisURL.replace( /^!/, "" );
