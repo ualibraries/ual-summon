@@ -47,7 +47,7 @@ console.log('alert banner display: '+$alert_banner.css('display'));
  */
  
 function libLogin( ) {
-var libThisURL = window.location.hash.substring( 1 );
+var libThisURL = window.location.substring( 1 );
 libThisURL = libThisURL.replace( /^!/, "" );
 var loginURL = 
 'http://ezproxy.library.arizona.edu/login?url=http://arizona.preview.summon.serialssolutions.com' + 
