@@ -41,3 +41,17 @@ console.log('height():'+$header.height());
 console.log('css height:'+$header.css('height'));
 console.log('alert banner display: '+$alert_banner.css('display'));
 });
+
+/**
+ * Summon search patch.
+ */
+ 
+function libLogin( ) {
+var libThisURL = window.location.hash.substring( 1 );
+libThisURL = libThisURL.replace( /^!/, "" );
+var loginURL = 
+'http://ezproxy.library.arizona.edu/login?url=http://arizona.preview.summon.serialssolutions.com' + 
+libThisURL;
+console.log( 'login URL = ' + loginURL );
+setTimeout( function () { window.self.location = loginURL; }, 2000 );
+}
