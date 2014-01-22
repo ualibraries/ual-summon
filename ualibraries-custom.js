@@ -3,12 +3,12 @@ $(document).ready(function() {
 /**
  * Summon search patch.
  */
-$('.vpnBanner a').click(function() {
+$('.vpnBanner a').click(function(e) {
   var libThisURL = window.location.hash.substring( 1 );
   libThisURL = libThisURL.replace( /^!/, "" );
   var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.preview.summon.serialssolutions.com' + libThisURL;
   console.log( 'login URL = ' + loginURL );
-  setTimeout( function () { window.self.location = loginURL; }, 2000 );
+  e.preventDefault();
 });
 
 /**
