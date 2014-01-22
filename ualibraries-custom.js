@@ -8,7 +8,6 @@ $('.vpnBanner a').click(function(e) {
   libThisURL = libThisURL.replace( /^!/, "" );
   var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.preview.summon.serialssolutions.com' + libThisURL;
   console.log( 'login URL = ' + loginURL );
-  e.preventDefault();
 });
 
 /**
