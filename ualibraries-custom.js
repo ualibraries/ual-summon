@@ -5,7 +5,7 @@ $(document).ready(function() {
  */
   var libThisURL = window.location.hash.substring( 1 );
   libThisURL = libThisURL.replace( /^!/, "" );
-  var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.preview.summon.serialssolutions.com' + libThisURL;
+  var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + libThisURL;
   $('.vpnBanner a').attr('href', loginURL);
 
 /**
