@@ -1,14 +1,18 @@
 $(document).ready(function() {
 
-/**
- * Summon search patch.
- */
-  var libThisURL = window.location.hash.substring( 1 );
-  libThisURL = libThisURL.replace( /^!/, "" );
-  var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + libThisURL;
-  console.log("loginURL = " + loginURL);
-  $('.vpnBanner a').attr('href', loginURL);
-  $('.vpnBanner a').attr('ng-href', loginURL);
+   /**
+    * Summon search patch
+    * The Angular #! URLs don't get passed to EZProxy. So intercept the click,
+    * parse the hash portion, and redirect to the proxied, non-hash URL.
+    */
+   $('.vpnBanner a').click(function(e) {
+      if (window.location.hash.length) {
+         e.preventDefault();
+         var summonPath = window.location.hash.substring(1).replace(/^!/, "");
+         var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + summonPath;
+         window.self.location = loginURL;
+      }
+   });
 
 /**
  * UA Banner styles and markup
