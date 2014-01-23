@@ -7,6 +7,7 @@ $(document).ready(function() {
   libThisURL = libThisURL.replace( /^!/, "" );
   var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + libThisURL;
   $('.vpnBanner a').attr('href', loginURL);
+  $('.vpnBanner a').attr('ng-href', loginURL);
 
 /**
  * UA Banner styles and markup
