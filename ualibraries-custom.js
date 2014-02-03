@@ -37,10 +37,10 @@ if($alert_banner.css('display') == 'block'){
 /**
  * Add a feedback link
  */
-$('<div class="feedback-link" style="position: fixed; right: 10px; bottom: 30px;"><a href="#">Feedback</a></div>').appendTo($header);
+$('<a class="feedback-link" style="display: block; position: fixed; right: 20px; bottom: 20px;" href="#">Submit Feedback</a>').appendTo($header);
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=020314-1">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=020314-2">').appendTo( $('head') );
 });
 
