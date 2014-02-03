@@ -34,13 +34,13 @@ var $main = $('#main');
 if($alert_banner.css('display') == 'block'){
   $('body').addClass('off-campus-alert');
 }
-
-
+/**
+ * Add a feedback link
+ */
+$('<div class="feedback-link"><a href="#">Feedback</a></div>').appendTo($header);
 /**
 * Write a link to our custom CSS file
 */
 $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=122613-2">').appendTo( $('head') );
-
-
 });
 
