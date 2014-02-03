@@ -30,10 +30,11 @@
 }
 .feedback-link{
 	background: #E3E3E3;
-	padding: 10px 10px 10px 30px;
+	padding: 10px 10px 10px 40px;
 	border: solid 1px #08C;
 	background-image: inline-image('thumbsupdown-1.svg');
 	background-repeat: no-repeat;
+	background-position: 10px 50%;
 	&:hover{
 		background-color: lighten(#E3E3E3,10%);
 		text-decoration: none;
