@@ -35,24 +35,12 @@ if($alert_banner.css('display') == 'block'){
   $('body').addClass('off-campus-alert');
 }
 
-/**
- * Rewrite help link
- */
-// var $help_link = $('.siteLinks div:nth-child(2n)');
-
-// $help_link.html('<a href="http://www.library.arizona.edu/search-find/summon/help" class="help" title="Summon Help">Help</a>');
 
 /**
 * Write a link to our custom CSS file
 */
 $('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=122613-2">').appendTo( $('head') );
 
-/**
- * Change width of right sidebar.
- */
 
-console.log('height():'+$header.height());
-console.log('css height:'+$header.css('height'));
-console.log('alert banner display: '+$alert_banner.css('display'));
 });
 
