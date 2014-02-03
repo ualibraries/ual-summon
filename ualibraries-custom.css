@@ -10,73 +10,79 @@
   min-height: 100px; }
 
 /* line 31, ualibraries-custom.scss */
+.feedback-link {
+  position: fixed;
+  bottom: 30px;
+  right: 10px; }
+
+/* line 36, ualibraries-custom.scss */
 .siteHeader {
   position: relative; }
-  /* line 33, ualibraries-custom.scss */
+  /* line 38, ualibraries-custom.scss */
   .siteHeader .Logo {
     padding: 0;
     height: 75px;
     line-height: 75px; }
 
-/* line 41, ualibraries-custom.scss */
+/* line 46, ualibraries-custom.scss */
 .searchBox .Logo a {
   display: block;
   width: 312px;
   margin: 0 auto; }
 
-/* line 48, ualibraries-custom.scss */
+/* line 53, ualibraries-custom.scss */
 .vpnBanner.customAuthBanner {
   height: 25px;
   padding: 0 0 0 2em;
   line-height: 25px; }
 
-/* line 53, ualibraries-custom.scss */
+/* line 58, ualibraries-custom.scss */
 #main {
   padding-top: 100px !important; }
-  /* line 55, ualibraries-custom.scss */
+  /* line 60, ualibraries-custom.scss */
   .off-campus-alert #main {
     padding-top: 125px !important; }
 
-/* line 59, ualibraries-custom.scss */
+/* line 64, ualibraries-custom.scss */
 .fixed.fullDialog {
   top: 100px !important; }
-  /* line 61, ualibraries-custom.scss */
+  /* line 66, ualibraries-custom.scss */
   .off-campus-alert .fixed.fullDialog {
     top: 125px !important; }
 
-/* line 65, ualibraries-custom.scss */
+/* line 70, ualibraries-custom.scss */
 .siteLinks {
   height: 32px;
   top: 50%;
   margin-top: -16px; }
-  /* line 70, ualibraries-custom.scss */
+  /* line 75, ualibraries-custom.scss */
   .siteLinks a:hover {
     text-decoration: none; }
-  /* line 74, ualibraries-custom.scss */
+  /* line 79, ualibraries-custom.scss */
   .siteLinks a.help {
     display: block; }
-    /* line 76, ualibraries-custom.scss */
+    /* line 81, ualibraries-custom.scss */
     .siteLinks a.help:before {
       margin-right: 3px;
       font-family: 'FontAwesome';
       content: "\f059"; }
-    /* line 81, ualibraries-custom.scss */
+    /* line 86, ualibraries-custom.scss */
     .siteLinks a.help:after {
       content: "";
       margin: 0; }
-  /* line 88, ualibraries-custom.scss */
+  /* line 93, ualibraries-custom.scss */
   .siteLinks .chat a p {
     display: none; }
 
-/* line 94, ualibraries-custom.scss */
+/* line 99, ualibraries-custom.scss */
 #ua-web-branding-banner-v1 {
   width: 100%;
   color: #fff;
   overflow: hidden; }
-  /* line 98, ualibraries-custom.scss */
+  /* line 103, ualibraries-custom.scss */
   #ua-web-branding-banner-v1.dark-gray {
     background-color: #999; }
-  /* line 101, ualibraries-custom.scss */
+  /* line 106, ualibraries-custom.scss */
   #ua-web-branding-banner-v1 .ua-home {
     display: inline-block;
     vertical-align: middle;
@@ -85,18 +91,18 @@
     *display: inline;
     width: 100%;
     max-width: 353px; }
-    /* line 105, ualibraries-custom.scss */
+    /* line 110, ualibraries-custom.scss */
     #ua-web-branding-banner-v1 .ua-home p {
       background-size: 100%; }
-  /* line 110, ualibraries-custom.scss */
+  /* line 115, ualibraries-custom.scss */
   #ua-web-branding-banner-v1.twenty-five {
     height: 25px; }
-    /* line 113, ualibraries-custom.scss */
+    /* line 118, ualibraries-custom.scss */
     #ua-web-branding-banner-v1.twenty-five .ua-home p {
       margin: 0 10px;
       height: 22px;
       background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.png) no-repeat 0px 0px; }
       @media (-o-min-device-pixel-ratio: 1.3 / 1), (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 125dpi) {
-        /* line 113, ualibraries-custom.scss */
+        /* line 118, ualibraries-custom.scss */
         #ua-web-branding-banner-v1.twenty-five .ua-home p {
           background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.svg) no-repeat 0px 0px; } }
