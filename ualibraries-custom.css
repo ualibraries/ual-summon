@@ -10,73 +10,84 @@
   min-height: 100px; }
 
 /* line 31, ualibraries-custom.scss */
+.feedback-link {
+  background: #E3E3E3;
+  padding: 10px;
+  border: solid 1px #08C; }
+  /* line 35, ualibraries-custom.scss */
+  .feedback-link a {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4PSIwIiB5PSIwIiB3aWR0aD0iMjIuMDEiIGhlaWdodD0iMTUuMTMiIHZpZXdCb3g9IjAiIHhtbDpzcGFjZT0icHJlc2VydmUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDIyLjAwNyAxNS4xMyI+DQogIDxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQogICAgDQoJLnN0MHtmaWxsOiMwMDg4Q0M7fQ0KDQogIDwvc3R5bGU+DQogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik05LjQxIDYuNTFjMC44IDAgMC4zNSAyLjA5LTAuMzUgMi4wOSAwLjM1IDAgMCAxLjc0LTAuNyAxLjc0IDAgMC43LTAuNyAxLjA1LTEuMzkgMS4wNSAtMi45NCAwLTEuOTEtMC43NC00Ljg4LTEuMDRWNC43N2MyLjYyLTAuNzkgNS4yMy0yLjc2IDUuMjMtNC41MyAwLjU4IDAgMi4wOSAwLjcgMCA0LjE4IDAgMCAxLjc0IDAgMi4wOSAwQzEwLjQ2IDQuNDIgMTAuMTEgNi41MSA5LjQxIDYuNTF6TTEuNCA0Ljc3djUuNThoMC43djAuMzVIMC43Yy0wLjM4IDAtMC43LTAuNDctMC43LTEuMDRWNS40N2MwLTAuNTcgMC4zMS0xLjA0IDAuNy0xLjA0aDEuMzl2MC4zNUgxLjR6Ii8+DQogIDxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik0xMi42IDguNjJjLTAuNzkgMC0wLjM1LTIuMDkgMC4zNS0yLjA5IC0wLjM1IDAgMC0xLjc0IDAuNy0xLjc0IDAtMC43IDAuNy0xLjA0IDEuMzktMS4wNCAyLjk0IDAgMS45MSAwLjc0IDQuODggMS4wNXY1LjU4Yy0yLjYyIDAuNzktNS4yMyAyLjc2LTUuMjMgNC41MyAtMC41OCAwLTIuMDktMC43IDAtNC4xOCAwIDAtMS43NCAwLTIuMDkgMEMxMS41NSAxMC43MSAxMS45IDguNjIgMTIuNiA4LjYyek0yMC42MSAxMC4zNlY0Ljc5aC0wLjdWNC40NGgxLjM5YzAuMzggMCAwLjcgMC40NyAwLjcgMS4wNXY0LjE4YzAgMC41Ny0wLjMxIDEuMDUtMC43IDEuMDVoLTEuMzl2LTAuMzVIMjAuNjF6Ii8+DQo8L3N2Zz4NCg==');
+    background-repeat: no-repeat;
+    padding-left: 30px; }
+
+/* line 41, ualibraries-custom.scss */
 .siteHeader {
   position: relative; }
-  /* line 33, ualibraries-custom.scss */
+  /* line 43, ualibraries-custom.scss */
   .siteHeader .Logo {
     padding: 0;
     height: 75px;
     line-height: 75px; }
 
-/* line 41, ualibraries-custom.scss */
+/* line 51, ualibraries-custom.scss */
 .searchBox .Logo a {
   display: block;
   width: 312px;
   margin: 0 auto; }
 
-/* line 48, ualibraries-custom.scss */
+/* line 58, ualibraries-custom.scss */
 .vpnBanner.customAuthBanner {
   height: 25px;
   padding: 0 0 0 2em;
   line-height: 25px; }
 
-/* line 53, ualibraries-custom.scss */
+/* line 63, ualibraries-custom.scss */
 #main {
   padding-top: 100px !important; }
-  /* line 55, ualibraries-custom.scss */
+  /* line 65, ualibraries-custom.scss */
   .off-campus-alert #main {
     padding-top: 125px !important; }
 
-/* line 59, ualibraries-custom.scss */
+/* line 69, ualibraries-custom.scss */
 .fixed.fullDialog {
   top: 100px !important; }
-  /* line 61, ualibraries-custom.scss */
+  /* line 71, ualibraries-custom.scss */
   .off-campus-alert .fixed.fullDialog {
     top: 125px !important; }
 
-/* line 65, ualibraries-custom.scss */
+/* line 75, ualibraries-custom.scss */
 .siteLinks {
   height: 32px;
   top: 50%;
   margin-top: -16px; }
-  /* line 70, ualibraries-custom.scss */
+  /* line 80, ualibraries-custom.scss */
   .siteLinks a:hover {
     text-decoration: none; }
-  /* line 74, ualibraries-custom.scss */
+  /* line 84, ualibraries-custom.scss */
   .siteLinks a.help {
     display: block; }
-    /* line 76, ualibraries-custom.scss */
+    /* line 86, ualibraries-custom.scss */
     .siteLinks a.help:before {
       margin-right: 3px;
       font-family: 'FontAwesome';
       content: "\f059"; }
-    /* line 81, ualibraries-custom.scss */
+    /* line 91, ualibraries-custom.scss */
     .siteLinks a.help:after {
       content: "";
       margin: 0; }
-  /* line 88, ualibraries-custom.scss */
+  /* line 98, ualibraries-custom.scss */
   .siteLinks .chat a p {
     display: none; }
 
-/* line 94, ualibraries-custom.scss */
+/* line 104, ualibraries-custom.scss */
 #ua-web-branding-banner-v1 {
   width: 100%;
   color: #fff;
   overflow: hidden; }
-  /* line 98, ualibraries-custom.scss */
+  /* line 108, ualibraries-custom.scss */
   #ua-web-branding-banner-v1.dark-gray {
     background-color: #999; }
-  /* line 101, ualibraries-custom.scss */
+  /* line 111, ualibraries-custom.scss */
   #ua-web-branding-banner-v1 .ua-home {
     display: inline-block;
     vertical-align: middle;
@@ -85,18 +96,18 @@
     *display: inline;
     width: 100%;
     max-width: 353px; }
-    /* line 105, ualibraries-custom.scss */
+    /* line 115, ualibraries-custom.scss */
     #ua-web-branding-banner-v1 .ua-home p {
       background-size: 100%; }
-  /* line 110, ualibraries-custom.scss */
+  /* line 120, ualibraries-custom.scss */
   #ua-web-branding-banner-v1.twenty-five {
     height: 25px; }
-    /* line 113, ualibraries-custom.scss */
+    /* line 123, ualibraries-custom.scss */
     #ua-web-branding-banner-v1.twenty-five .ua-home p {
       margin: 0 10px;
       height: 22px;
       background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.png) no-repeat 0px 0px; }
       @media (-o-min-device-pixel-ratio: 1.3 / 1), (-webkit-min-device-pixel-ratio: 1.3), (min-resolution: 125dpi) {
-        /* line 113, ualibraries-custom.scss */
+        /* line 123, ualibraries-custom.scss */
         #ua-web-branding-banner-v1.twenty-five .ua-home p {
           background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.svg) no-repeat 0px 0px; } }
