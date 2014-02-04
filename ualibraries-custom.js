@@ -21,7 +21,7 @@ $(document).ready(function() {
   viewport.attr('content', 'width=1000');
   var hasTouch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
   if( $(window).width() <= 768 && hasTouch ){
-    document.documentElement.className += 'touch';
+    document.documentElement.className += ' touch';
     $('<style>' +
           '.header{' +
             'position: relative;' +
