@@ -37,7 +37,7 @@ if($alert_banner.css('display') == 'block'){
 /**
  * Add a feedback link
  */
-$('<a class="feedback-link" style="display: block; position: fixed; right: 20px; bottom: 20px;" href="#">Submit Feedback</a>').appendTo($header);
+$('<a class="feedback-link" style="display: block; position: fixed; right: 20px; bottom: 20px;" href="#">Submit Feedback</a>').appendTo('body');
 /**
 * Write a link to our custom CSS file
 */
