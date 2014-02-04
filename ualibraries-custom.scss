@@ -44,6 +44,9 @@
 		background-color: #EEE;
 		text-decoration: none;
 	}
+	@media all and (max-width: 768px) {
+		display: none;
+	}
 }
 .siteHeader{
 	position: relative;
