@@ -135,12 +135,3 @@
 		}
 	}
 }
-/* Some fixes for small screen nonsense */
-@media screen and (max-width: 1000px) {
-	.header{
-		position: relative;
-	}
-	#main{
-		padding-top: 0 !important;
-	}
-}
