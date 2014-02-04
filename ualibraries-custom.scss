@@ -37,6 +37,9 @@
 	background-image: inline-image('thumbsupdown-1.svg');
 	background-repeat: no-repeat;
 	background-position: 10px 50%;
+	.no-svg &{
+		background-image: inline-image('thumbsupdown-1.png');	
+	}
 	&:hover{
 		background-color: #EEE;
 		text-decoration: none;
