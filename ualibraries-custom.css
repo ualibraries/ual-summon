@@ -114,3 +114,11 @@
         /* line 127, ualibraries-custom.scss */
         #ua-web-branding-banner-v1.twenty-five .ua-home p {
           background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.svg) no-repeat 0px 0px; } }
+
+/* Some fixes for small screen nonsense */
+/* line 140, ualibraries-custom.scss */
+.touch .header {
+  position: relative; }
+/* line 143, ualibraries-custom.scss */
+.touch #main {
+  padding-top: 0 !important; }

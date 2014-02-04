@@ -17,22 +17,18 @@ $(document).ready(function() {
  * Rewrite meta viewport tag so screeen is zoomed out on mobile
  */
 (function (){
-  var $main = $('#main');
-  $main.css('padding-top','100px');
   var hasTouch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
   if( $(window).width() <= 768 && hasTouch ){
     var viewport = $("meta[name=viewport]");
     viewport.attr('content', 'width=1000');
     document.documentElement.className += ' touch';
-    $('#main').css('padding-top','0');
-    $('.header').css('position','relative');
   }
 })();
 
 /**
  * UA Banner styles and markup
  */
-var $header = $('.header');
+
 var $alert_banner = $('.vpnBanner.customAuthBanner');
 var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark dark-gray twenty-five">'+
   '<a class="ua-home asdf" href="http://arizona.edu" title="The University of Arizona">'+
@@ -42,7 +38,6 @@ var $ua_banner = $('<div id="ua-web-branding-banner-v1" class="ua-wrapper bgDark
 
 $alert_banner.after($ua_banner);
 
-var $header_height = $header.height();
 var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
 
 if($alert_banner.css('display') == 'block'){
@@ -55,6 +50,6 @@ $('<a class="feedback-link" style="display: block; position: fixed; right: 20px;
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=020414-5">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=020414-6">').appendTo( $('head') );
 });
 

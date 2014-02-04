@@ -135,3 +135,12 @@
 		}
 	}
 }
+/* Some fixes for small screen nonsense */
+.touch {
+	.header{
+		position: relative;
+	}
+	#main{
+		padding-top: 0 !important;
+	}
+}
