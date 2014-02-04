@@ -17,6 +17,8 @@ $(document).ready(function() {
  * Rewrite meta viewport tag so screeen is zoomed out on mobile
  */
 (function (){
+  var $main = $('#main');
+  $main.css('padding-top','100px');
   var hasTouch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
   if( $(window).width() <= 768 && hasTouch ){
     var viewport = $("meta[name=viewport]");
@@ -42,7 +44,6 @@ $alert_banner.after($ua_banner);
 
 var $header_height = $header.height();
 var $adv_search_form = $('.fixed.fullDialog.advancedSearchDialog');
-var $main = $('#main');
 
 if($alert_banner.css('display') == 'block'){
   $('body').addClass('off-campus-alert');
