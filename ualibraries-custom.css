@@ -116,7 +116,7 @@
           background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.svg) no-repeat 0px 0px; } }
 
 /* Some fixes for small screen nonsense */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   /* line 140, ualibraries-custom.scss */
   .header {
     position: relative; }
