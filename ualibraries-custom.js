@@ -17,10 +17,10 @@ $(document).ready(function() {
  * Rewrite meta viewport tag so screeen is zoomed out on mobile
  */
 (function (){
+  var viewport = $("meta[name=viewport]");
+  viewport.attr('content', 'width=1000');
   var hasTouch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
   if( $(window).width() <= 768 && hasTouch ){
-    viewport = $("meta[name=viewport]");
-    viewport.attr('content', 'width=1000');
     document.documentElement.className += 'touch';
     $('<style>' +
           '.header{' +
