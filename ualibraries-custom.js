@@ -45,6 +45,6 @@ $('<a class="feedback-link" style="display: block; position: fixed; right: 20px;
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=020414-2">').appendTo( $('head') );
+$('<link rel="stylesheet" href="https://rawgithub.com/liquid06/summon/master/ualibraries-custom.css?ver=020414-3">').appendTo( $('head') );
 });
 
