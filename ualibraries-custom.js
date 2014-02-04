@@ -9,7 +9,7 @@ $(document).ready(function() {
       if (window.location.hash.length) {
          e.preventDefault();
          var summonPath = window.location.hash.substring(1).replace(/^!/, "");
-         var loginURL = encodeURI{'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + summonPath);
+         var loginURL = encodeURI('http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + summonPath);
          window.self.location = loginURL;
       }
    });
