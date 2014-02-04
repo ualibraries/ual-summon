@@ -16,7 +16,7 @@ $(document).ready(function() {
 /**
  * Rewrite meta viewport tag so screeen is zoomed out on mobile
  */
-// viewport = $("meta[name=viewport]");
+$("meta[name=viewport]").remove();
 // viewport.attr('content', 'width=1000');
 /**
  * UA Banner styles and markup
