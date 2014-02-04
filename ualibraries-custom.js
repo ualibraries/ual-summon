@@ -22,14 +22,8 @@ $(document).ready(function() {
   var hasTouch = (('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch);
   if( $(window).width() <= 768 && hasTouch ){
     document.documentElement.className += ' touch';
-    $('<style>' +
-          '.header{' +
-            'position: relative;' +
-          '}' +
-          '#main{' +
-            'padding-top: 0 !important;' +
-          '}' +
-          '</style>').appendTo('head');
+    $('#main').css('padding-top','0');
+    $('.header').css('position','relative');
   }
 })();
 
