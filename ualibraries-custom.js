@@ -9,8 +9,8 @@ $(document).ready(function() {
       if (window.location.hash.length) {
          e.preventDefault();
          var summonPath = window.location.hash.substring(1).replace(/^!/, "");
-         var encodedSummonURL = encodeURIComponent('http://arizona.summon.serialssolutions.com' + summonPath);
-         var loginURL = 'http://ezproxy.library.arizona.edu/login?url=' + encodedSummonURL;
+         summonPath = summonPath.replace('|', encodeURIComponent('|')); // fvf crashes the Summon API if there's a pipe in the Referer (Firefox only)
+         var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + summonPath;
          console.log("Login URL: " + loginURL);
          window.self.location = loginURL;
       }
