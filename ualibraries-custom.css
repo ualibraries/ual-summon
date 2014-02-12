@@ -88,7 +88,10 @@
   /* line 108, ualibraries-custom.scss */
   .siteLinks .chat a p {
     display: none; }
-
+  /* line 113, ualibraries-custom.scss */
+  .home .siteLinks {
+    margin: 0;
+    top: 30px; }
 /* line 114, ualibraries-custom.scss */
 #ua-web-branding-banner-v1 {
   width: 100%;
