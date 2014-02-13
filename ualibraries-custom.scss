@@ -37,6 +37,7 @@
 	background-image: inline-image('thumbsupdown-1.svg');
 	background-repeat: no-repeat;
 	background-position: 10px 50%;
+	z-index: 1001;
 	.no-svg &{
 		background-image: inline-image('thumbsupdown-1.png');	
 	}
