@@ -2,8 +2,7 @@ $(document).ready(function() {
 
    /**
     * Summon search patch
-    * The Angular #! URLs don't get passed to EZProxy. So intercept the click,
-    * parse the hash portion, and redirect to the proxied, non-hash URL.
+    * We lose the search without this, and the Summon API crashes in Firefox after authentication.
     */
    $('.vpnBanner a').click(function(e) {
       if (window.location.hash.length) {
@@ -15,6 +14,14 @@ $(document).ready(function() {
          window.self.location = loginURL;
       }
    });
+
+   /**
+    * If someone clicks our Summon logo after authenticating to do another search, don't make them authenticate again.
+    */
+   if (window.location.hostname.match(/ezproxy[0-9]\.library\.arizona\.edu/)) {
+      $('.customHeader a').attr('href', $('.customHeader a').attr('href') + '?summon-proxy=1');
+   }
+
 /**
  * Rewrite meta viewport tag so screeen is zoomed out on mobile
  */
