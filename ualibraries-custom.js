@@ -19,7 +19,10 @@ $(document).ready(function() {
     * If someone clicks our Summon logo after authenticating to do another search, don't make them authenticate again.
     */
    if (window.location.hostname.match(/ezproxy[0-9]\.library\.arizona\.edu/)) {
-      $('.customHeader a').attr('href', $('.customHeader a').attr('href') + '?summon-proxy=1');
+      $target = $('.customHeader .Logo a');
+      $newURL = $target.attr('href') + '?summon-proxy=1';
+      $target.attr('href', $newURL);
+      $target.attr('ng-href', $newURL);
    }
 
 /**
