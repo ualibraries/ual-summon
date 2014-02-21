@@ -67,10 +67,12 @@ $('<link rel="stylesheet" href="//webdev.library.arizona.edu/vendor-support/summ
 * Dim the feedback link while results are loading
 */
 function showHideFeedbackLink(){
-    $('.feedback-link').css('z-index','1001');
-    $('.loader').each(function(){
+  var feedbackLink = $('.feedback-link');
+  var loader = $('.loader');
+    feedbackLink.css('z-index','1001');
+    loader.each(function(){
         if($(this).is(':visible')){
-            $('.feedback-link').css('z-index','1');
+            feedbackLink.css('z-index','1');
         }
     });
 }
