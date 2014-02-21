@@ -68,9 +68,9 @@ $('<link rel="stylesheet" href="//webdev.library.arizona.edu/vendor-support/summ
 */
 function showHideFeedbackLink(){
   var feedbackLink = $('.feedback-link');
-  var loader = $('.loader');
+  var resultsLoader = $('.loader');
     feedbackLink.css('z-index','1001');
-    loader.each(function(){
+    resultsLoader.each(function(){
         if($(this).is(':visible')){
             feedbackLink.css('z-index','1');
         }
