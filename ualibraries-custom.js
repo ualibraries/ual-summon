@@ -10,7 +10,6 @@ $(document).ready(function() {
          var summonPath = window.location.hash.substring(1).replace(/^!/, "");
          summonPath = summonPath.replace('|', encodeURIComponent('|')); // fvf crashes the Summon API if there's a pipe in the Referer (Firefox only)
          var loginURL = 'http://ezproxy.library.arizona.edu/login?url=http://arizona.summon.serialssolutions.com' + summonPath;
-         console.log("Login URL: " + loginURL);
          window.self.location = loginURL;
       }
    });
