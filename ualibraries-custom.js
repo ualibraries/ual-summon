@@ -51,7 +51,7 @@ $('<a class="feedback-link" target="_blank" style="display: block; position: fix
 /**
 * Write a link to our custom CSS file
 */
-$('<link rel="stylesheet" href="//webdev.library.arizona.edu/vendor-support/summon/ualibraries-custom.css?ver=021214-1">').appendTo( $('head') );
+$('<link rel="stylesheet" href="//www.library.arizona.edu/vendor-support/summon/ualibraries-custom.css">').appendTo( $('head') );
 });
 
 /**
