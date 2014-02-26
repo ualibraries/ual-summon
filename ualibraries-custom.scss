@@ -25,7 +25,6 @@
 .header{
 	min-height: 100px;
 	min-width: 1000px;
-
 	&.navbar-fixed-top{
 
 	}
@@ -39,7 +38,7 @@
 	background-position: 10px 50%;
 	z-index: 1001;
 	.no-svg &{
-		background-image: inline-image('thumbsupdown-1.png');	
+		background-image: url('thumbsupdown-1.png');
 	}
 	&:hover{
 		background-color: #EEE;

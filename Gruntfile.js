@@ -7,23 +7,28 @@ grunt.initConfig({
           sassDir: '',
           cssDir: '',
           imagesDir: 'images',
-          environment: 'development',
-          outputStyle: 'nested',
-          relativeAssets: true
+          environment: 'production',
+          outputStyle: 'expanded',
+          relativeAssets: true,
+          line_comments: false
         }
       }
     },
     concat: {
+        // Us this to concatenate multiple JS files if needed
+        // Define multiple JS files in the src array, comma separated
         // separator: ';',
         // dist: {
-        //   src: ['../js/libs/jquery.flexslider.js','../js/libs/jquery.waypoints.js','../js/libs/jquery.waypoints-sticky.js','../js/libs/jquery.organictabs.js','../js/libs/jquery.reveal.js','../js/scripts.js'],
-        //   dest: '../js/scripts.js'
+        //   src: ['ualibraries-custom.js'],
+        //   dest: 'scripts.js'
         // }
     },
     uglify: {
+      // Us this to minify JS as neeed
+      // Define desintation and source files (in that order) in the files array
       // scripts: {
       //   files: {
-      //     '../js/scripts.min.js' : '../js/scripts.js'
+      //     'scripts.min.js' : 'scripts.js'
       //   }
       // }
     },
@@ -32,6 +37,7 @@ grunt.initConfig({
         files: '*.scss',
         tasks: ['compass']
       }
+      // Add the script conacatenation to the watch task
       // scripts: {
       //   files: ['<%= concat.dist.src %>'],
       //   tasks: ['concat']
