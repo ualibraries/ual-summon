@@ -1,34 +1,6 @@
 @import 'compass';
 // Mixins & @extends
-%replace-text, .replace-text{
-  &:before{
-    content: "";
-    display: block;
-    width: 0;
-    height: 100%;
-  }
-}
-@mixin hd-bp ( $ratio: 1.3 ) {
-  @media (-o-min-device-pixel-ratio: #{$ratio}/1),
-         (-webkit-min-device-pixel-ratio: #{$ratio}),
-         (min-resolution: #{round(96 * $ratio)}dpi) {
-    @content;
-  }
-}
-@mixin sd-bp ( $ratio: 1.3 ) {
-  @media (-o-max-device-pixel-ratio: #{$ratio}/1),
-         (-webkit-max-device-pixel-ratio: #{$ratio}),
-         (max-resolution: #{round(96 * $ratio)}dpi) {
-    @content;
-  }
-}
-.header{
-	min-height: 100px;
-	min-width: 1000px;
-	&.navbar-fixed-top{
 
-	}
-}
 .feedback-link{
 	background: #E3E3E3;
 	padding: 10px 10px 10px 40px;
@@ -44,113 +16,39 @@
 		background-color: #EEE;
 		text-decoration: none;
 	}
-	@media all and (max-width: 768px) {
-		display: none;
-	}
+
 }
-.siteHeader{
-	position: relative;
-	.Logo{
-		padding: 0;
-		height: 75px;
-		line-height: 75px;
-	}
-}
-.searchBox{
-	.Logo{
-		a{
-			display: block;
-			width: 312px;
-			margin: 0 auto;
-		}
-	}
-}
-.vpnBanner.customAuthBanner{
-	height: 25px;
-	padding: 0 0 0 2em;
-	line-height: 25px;
-}
-#main{
-	padding-top: 100px !important;
-	.off-campus-alert &{
-		padding-top: 125px !important;
-	}
-}
-.fixed.fullDialog{
-	top: 100px !important;
-	.off-campus-alert &{
-		top: 125px !important;
-	}
-}
-.siteLinks{
-	height: 32px;
-	top: 50%;
-	margin-top: -16px;
-	a{
-		&:hover{
-			text-decoration: none;
-		}
-	}
-	a.help{
-		display: block;
-		&:before{
-			margin-right: 3px;
-			font-family: 'FontAwesome';
-			content: "\f059";
-		}
-		&:after{
-			content:"";
-			margin: 0;
-		}
-	}
-	.chat{
-		a{
-			p{
-				display: none;
-			}
-		}
-	}
-	.home &{
-		margin: 10px;
-		position: static;
-	}
-}
-#ua-web-branding-banner-v1{
-	width: 100%;
-	color: #fff;
-	overflow: hidden;
-	&.dark-gray{
-		background-color: #999;
-	}
-	.ua-home{
-		@include inline-block;
-		width: 100%;
-		max-width: 353px;
-		p{
-			@extend %replace-text;
-			background-size: 100%;
-		}
-	}
-	&.twenty-five{
-		height: 25px;
-		.ua-home{
-			p{
-				margin: 0 10px;
-				height: 22px;
-				background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.png) no-repeat 0px 0px;
-				@include hd-bp() {
-					background: url(http://redbar.arizona.edu/sites/default/files/ua-banner/ua-web-branding/images/ua_line_logo_white.svg) no-repeat 0px 0px;
-				}
-			}
-		}
-	}
-}
-/* Some fixes for small screen nonsense */
-.touch {
-	.header{
-		position: relative;
-	}
-	#main{
-		padding-top: 0 !important;
-	}
-}
+
+// .siteLinks{
+// 	height: 32px;
+// 	top: 50%;
+// 	margin-top: -16px;
+// 	a{
+// 		&:hover{
+// 			text-decoration: none;
+// 		}
+// 	}
+// 	a.help{
+// 		display: block;
+// 		&:before{
+// 			margin-right: 3px;
+// 			font-family: 'FontAwesome';
+// 			content: "\f059";
+// 		}
+// 		&:after{
+// 			content:"";
+// 			margin: 0;
+// 		}
+// 	}
+// 	.chat{
+// 		a{
+// 			p{
+// 				display: none;
+// 			}
+// 		}
+// 	}
+// 	.home &{
+// 		margin: 10px;
+// 		position: static;
+// 	}
+// }
