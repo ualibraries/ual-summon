@@ -19,8 +19,8 @@ gulp.task('styles', function(){
     return gulp.src('ualibraries-custom.scss')
     .pipe(plumber())
     .pipe(compass({
-        sass: '.',
-        css: '.',
+        sass: '',
+        css: '',
         //image: 'source/images',
         //environment: 'production',
         //environment: 'development',
