@@ -46,6 +46,24 @@
 		background-image: url('images/cancel.png');
 	}
 }
+
+$vertical-space: 4px;
+
+.Filter .count {
+	padding: $vertical-space 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.facetFields .Filter a,
+.moreFacetsPane .FilterGroup .Filter a {
+	white-space: normal;
+	width: 155px;
+	padding-top: $vertical-space;
+	padding-bottom: $vertical-space;
+	padding-right: 0;
+}
+
 // .siteLinks{
 // 	height: 32px;
 // 	top: 50%;

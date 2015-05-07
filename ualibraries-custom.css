@@ -51,3 +51,20 @@
 .no-svg .feedback-dismiss-button {
   background-image: url("images/cancel.png");
 }
+
+/* line 52, ualibraries-custom.scss */
+.Filter .count {
+  padding: 4px 0;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 58, ualibraries-custom.scss */
+.facetFields .Filter a,
+.moreFacetsPane .FilterGroup .Filter a {
+  white-space: normal;
+  width: 155px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 0;
+}
