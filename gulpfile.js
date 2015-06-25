@@ -12,7 +12,8 @@ gulp.task('styles', function(){
         sass: '',
         css: '',
         style: 'expanded',
-        relative: true
+        relative: true,
+        comments: false
     }))
     .pipe(autoprefixer())
     .pipe(gulp.dest('.'))

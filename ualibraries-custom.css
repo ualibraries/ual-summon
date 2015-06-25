@@ -1,4 +1,3 @@
-/* line 12, ualibraries-custom.scss */
 .feedback-link {
   display: block;
   position: fixed;
@@ -12,21 +11,17 @@
   background-position: 10px 50%;
   border: solid 1px #08c;
 }
-/* line 25, ualibraries-custom.scss */
 .no-svg .feedback-link {
   background-image: url("images/thumbsupdown-1.png");
 }
-/* line 29, ualibraries-custom.scss */
 .feedback-link:hover {
   background-color: #eee;
   text-decoration: none;
 }
-/* line 34, ualibraries-custom.scss */
 .feedback-link.dismissed {
   display: none;
 }
 
-/* line 39, ualibraries-custom.scss */
 .feedback-dismiss-button {
   display: block;
   position: absolute;
@@ -43,23 +38,19 @@
   line-height: 39px;
   text-align: center;
 }
-/* line 55, ualibraries-custom.scss */
 .feedback-dismiss-button:hover {
   background-color: #fff;
 }
-/* line 59, ualibraries-custom.scss */
 .no-svg .feedback-dismiss-button {
   background-image: url("images/cancel.png");
 }
 
-/* line 64, ualibraries-custom.scss */
 .Filter .count {
   display: table-cell;
   padding: 4px 0;
   vertical-align: middle;
 }
 
-/* line 70, ualibraries-custom.scss */
 .facetFields .Filter a,
 .moreFacetsPane .FilterGroup .Filter a {
   width: 155px;
