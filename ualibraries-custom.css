@@ -1,3 +1,7 @@
+a.feedback {
+  display: none;
+}
+
 .feedback-link {
   display: block;
   position: fixed;

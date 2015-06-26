@@ -9,6 +9,13 @@ $dark-gray: #464646;
 $bright-blue: #08c;
 $vertical-space: 4px;
 
+// Hide Summon's default feedback link
+
+a.feedback {
+    display: none;
+}
+
+// Style our custom feedback link
 .feedback-link {
     display: block;
     position: fixed;
