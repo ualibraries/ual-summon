@@ -49,6 +49,11 @@ a.feedback {
   background-image: url("images/cancel.png");
 }
 
+@media (max-width: 1024px) {
+  .endOfResults {
+    padding-bottom: 52px;
+  }
+}
 .Filter .count {
   display: table-cell;
   padding: 4px 0;

@@ -68,6 +68,13 @@ a.feedback {
     }
 }
 
+// Prevent the feedback button from obscuring the end of results message on small screens.
+@media (max-width: 1024px) {
+    .endOfResults {
+        padding-bottom: 52px;
+    }
+}
+
 .Filter .count {
     display: table-cell;
     padding: $vertical-space 0;
