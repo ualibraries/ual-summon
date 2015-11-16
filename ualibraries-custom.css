@@ -1,4 +1,5 @@
-a.feedback {
+a.feedback,
+#linksMenu .siteLinks div a.feedback {
   display: none;
 }
 

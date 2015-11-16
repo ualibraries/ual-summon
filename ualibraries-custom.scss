@@ -11,7 +11,8 @@ $vertical-space: 4px;
 
 // Hide Summon's default feedback link
 
-a.feedback {
+a.feedback,
+#linksMenu .siteLinks div a.feedback {
     display: none;
 }
 
