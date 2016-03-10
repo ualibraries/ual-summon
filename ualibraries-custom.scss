@@ -91,3 +91,14 @@ a.feedback,
     white-space: normal;
 }
 
+// Control the display of our custom Ask us link
+
+#linksMenu .siteLinks>div.ask-us-container {
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .siteLinks .ask-us {
+    display: none;
+  }
+}

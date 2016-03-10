@@ -20,6 +20,11 @@ $(document).ready(function() {
   $('<link rel="stylesheet" href="//www.library.arizona.edu/vendor-support/summon/ualibraries-custom.css?ver=062414-1">').appendTo( $('head') );
 
   /**
+   * Add a link to Ask us on small screens
+   */
+  $('.siteLinks').prepend('<div class="ask-us-container"><a href="http://ask.library.arizona.edu" target="_blank" class="ask-us">Ask us</a></div>');
+
+  /**
    * Add a feedback link
    */
   $('<a class="feedback-link" target="_blank" href="http://www.library.arizona.edu/search-find/summon/feedback">Submit Feedback<span class="feedback-dismiss-button"></span></a>').appendTo('body');

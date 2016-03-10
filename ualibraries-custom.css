@@ -69,3 +69,13 @@ a.feedback,
   padding-bottom: 4px;
   white-space: normal;
 }
+
+#linksMenu .siteLinks > div.ask-us-container {
+  border-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .siteLinks .ask-us {
+    display: none;
+  }
+}
