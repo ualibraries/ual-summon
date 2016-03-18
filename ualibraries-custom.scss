@@ -7,7 +7,6 @@ $light-gray: #eee;
 $medium-gray: #e3e3e3;
 $dark-gray: #464646;
 $bright-blue: #08c;
-$vertical-space: 4px;
 
 // Hide Summon's default feedback link
 
@@ -74,21 +73,6 @@ a.feedback,
     .endOfResults {
         padding-bottom: 52px;
     }
-}
-
-.Filter .count {
-    display: table-cell;
-    padding: $vertical-space 0;
-    vertical-align: middle;
-}
-
-.facetFields .Filter a,
-.moreFacetsPane .FilterGroup .Filter a {
-    width: 155px;
-    padding-top: $vertical-space;
-    padding-right: 0;
-    padding-bottom: $vertical-space;
-    white-space: normal;
 }
 
 // Control the display of our custom Ask us link

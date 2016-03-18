@@ -55,21 +55,6 @@ a.feedback,
     padding-bottom: 52px;
   }
 }
-.Filter .count {
-  display: table-cell;
-  padding: 4px 0;
-  vertical-align: middle;
-}
-
-.facetFields .Filter a,
-.moreFacetsPane .FilterGroup .Filter a {
-  width: 155px;
-  padding-top: 4px;
-  padding-right: 0;
-  padding-bottom: 4px;
-  white-space: normal;
-}
-
 #linksMenu .siteLinks > div.ask-us-container {
   border-bottom: 0;
 }
