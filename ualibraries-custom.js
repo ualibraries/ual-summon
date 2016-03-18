@@ -17,7 +17,7 @@ $(document).ready(function() {
   /**
    * Write a link to our custom CSS file
    */
-  $('<link rel="stylesheet" href="//www.library.arizona.edu/vendor-support/summon/ualibraries-custom.css?ver=062414-1">').appendTo( $('head') );
+  $('<link rel="stylesheet" href="//www.library.arizona.edu/vendor-support/summon/ualibraries-custom.css?ver=031816">').appendTo( $('head') );
 
   /**
    * Add a link to Ask us on small screens
