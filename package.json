@@ -6,7 +6,8 @@
   "style": "dist/styles/ualibraries-custom.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dist": "gulp"
+    "dist": "gulp",
+    "watch": "gulp && gulp watch"
   },
   "repository": {
     "type": "git",

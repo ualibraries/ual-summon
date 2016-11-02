@@ -60,5 +60,12 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/images'));
 });
 
+// Watch task
+gulp.task('watch', function() {
+  gulp.watch('assets/styles/**/*.less', ['styles']);
+  gulp.watch('assets/scripts/**/*.js', ['scripts']);
+  gulp.watch('assets/images/**/*.png', ['images']);
+});
+
 // Default task
 gulp.task('default', ['styles', 'scripts', 'images']);
