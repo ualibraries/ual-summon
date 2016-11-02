@@ -11,6 +11,8 @@ Run `npm install` to install the Node modules.
 
 Run `npm run dist` to build the project.
 
+Run `npm run watch` to watch for changes.
+
 ## Where is everything?
 
 ```shell
@@ -43,6 +45,8 @@ $ tree -I "node_modules|.DS_Store|.git" -L 2 -a
 [Uglify](https://github.com/mishoo/UglifyJS)
 
 `gulp images`: [Imagemin](https://github.com/imagemin/imagemin)
+
+`gulp watch`: Watches things
 
 ## Deploying
 
