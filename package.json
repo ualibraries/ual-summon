@@ -1,18 +1,22 @@
 {
   "name": "summon",
   "version": "2.0.0",
-  "description": "",
-  "main": "gulpfile.js",
+  "description": "University Libraries Summon customizations",
+  "main": "dist/scripts/ualibraries-custom.js",
+  "style": "dist/styles/ualibraries-custom.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dist": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://cg433n@vitae.library.arizona.edu/data1/vitae/repos/summon.git"
+    "url": "ssh://vitae.library.arizona.edu/data1/vitae/repos/summon.git"
+  },
+  "bugs": {
+    "url": "http://redmine.library.arizona.edu/projects/vendor-support"
   },
   "author": "Christopher Green",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "devDependencies": {
     "cssnano": "^3.8.0",
     "gulp": "^3.9.1",
@@ -24,5 +28,6 @@
     "postcss-reporter": "^1.4.1",
     "pump": "^1.0.1",
     "stylelint": "^7.5.0"
-  }
+  },
+  "private": true
 }
