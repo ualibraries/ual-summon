@@ -1,29 +1,64 @@
-var gulp = require('gulp'),
-    sass = require('gulp-ruby-sass'),
-    compass = require('gulp-compass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    notify = require('gulp-notify'),
-    plumber = require('gulp-plumber');
+var cssnano   = require('cssnano');
+var eslint    = require('gulp-eslint');
+var gulp      = require('gulp');
+var imagemin  = require('gulp-imagemin');
+var less      = require('gulp-less');
+var postcss   = require('gulp-postcss');
+var reporter  = require('postcss-reporter');
+var stylelint = require('stylelint');
+var uglify    = require('gulp-uglify');
+var pump      = require('pump');
 
-gulp.task('styles', function(){
-    return gulp.src('ualibraries-custom.scss')
-    .pipe(plumber())
-    .pipe(compass({
-        sass: '',
-        css: '',
-        style: 'expanded',
-        relative: true,
-        comments: false
+// PostCSS processors
+var processors = [
+  stylelint({
+    configFile: '.stylelintrc.json'
+  }),
+  reporter({
+    clearMessages: true,
+    throwError: false
+  }),
+  cssnano({
+    autoprefixer: {
+      browsers: ['> 1%']
+    }
+  })
+];
+
+// Styles task
+gulp.task('styles', function() {
+  gulp.src('assets/styles/ualibraries-custom.less')
+    .pipe(less())
+    .pipe(postcss(processors))
+    .pipe(gulp.dest('dist/styles'));
+});
+
+// Scripts task
+gulp.task('scripts', function(cb) {
+  // main JS file
+  pump([
+    gulp.src('assets/scripts/ualibraries-custom.js'),
+    eslint({
+      configFile: '.eslintrc.json'
+    }),
+    uglify(),
+    gulp.dest('dist/scripts')
+  ], cb);
+    
+  // Lint the Gulpfile
+  gulp.src('gulpfile.js')
+    .pipe(eslint({
+      configFile: '.eslintrc.json'
     }))
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('.'))
-    .pipe(notify({ message: 'Styles compiled' }));
+    .pipe(eslint.format());
 });
 
-gulp.task('watch', function() {
-    // Watch .scss files
-    gulp.watch('**/*.scss', ['styles'])
+// Images task
+gulp.task('images', function() {
+  gulp.src('assets/images/**/*.png')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/images'));
 });
 
-// Default Task
-gulp.task('default', ['styles', 'watch']);
+// Default task
+gulp.task('default', ['styles', 'scripts', 'images']);

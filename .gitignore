@@ -1,4 +1,4 @@
-/node_modules/
+node_modules
 
 /site-copy/
 
@@ -9,3 +9,5 @@
 /Gemfile.lock
 
 .idea
+
+.DS_Store
