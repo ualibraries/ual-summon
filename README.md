@@ -57,7 +57,9 @@ feature branch into master.
 
 Push local changes to `vitae.library.arizona.edu`.
 
-`ssh` into `www.library.arizona.edu`, checkout `master`, and pull from `vitae.library.arizona.edu`.
+`ssh` into `www.library.arizona.edu`. The project is located in `/data1/mainsite/vendor-support/summon`.
+
+Checkout `master`, and pull from `vitae.library.arizona.edu`.
 
 Test your changes live (yikes!).
 
