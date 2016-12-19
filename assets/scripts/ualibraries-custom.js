@@ -30,6 +30,5 @@ $(document).ready(function() {
    * Adds a chat button to the root Summon page
    */
   $('body').append('<div class="home-chat-button"><div id="libchat_07713bc057f66ebcdccd4dd1b4a2be3e"></div></div>');
-  $('body').append('<script src="//v2.libanswers.com/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>');
   
 }); // end $(document).ready(function(){});
