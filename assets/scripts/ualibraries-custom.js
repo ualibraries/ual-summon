@@ -26,4 +26,10 @@ $(document).ready(function() {
   var askUsLink = angular.element('<div class="ask-us-container"><a href="http://ask.library.arizona.edu" target="_blank" class="ask-us">Ask us</a></div>');
   $('.content .holdingsOnlyToggle').after(askUsLink);
   
+  /**
+   * Adds a chat button to the root Summon page
+   */
+  $('body').append('<div class="home-chat-button"><div id="libchat_07713bc057f66ebcdccd4dd1b4a2be3e"></div></div>');
+  $('body').append('<script src="//v2.libanswers.com/load_chat.php?hash=07713bc057f66ebcdccd4dd1b4a2be3e"></script>');
+  
 }); // end $(document).ready(function(){});
