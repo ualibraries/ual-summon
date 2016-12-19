@@ -23,7 +23,7 @@ $(document).ready(function() {
   /**
    * Add a link to Ask us on small screens
    */
-  var askUsLink = angular.element('<div class="ask-us-container"><a href="http://ask.library.arizona.edu" target="_blank" class="ask-us">Ask us</a></div>');
+  var askUsLink = angular.element('<div class="ask-us-container"><a href="http://new.library.arizona.edu/contact" target="_blank" class="ask-us">Ask us</a></div>');
   $('.content .holdingsOnlyToggle').after(askUsLink);
   
   /**
