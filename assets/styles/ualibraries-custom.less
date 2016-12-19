@@ -11,8 +11,7 @@ div.ask-us-container a {
 }
 
 html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button {
-  background-image: url('//www.library.arizona.edu/vendor-support/summon/dist/images/icon-chat.png');
-  background-position: center center;
+  background-image: none;
   border: none;
   border-radius: 0;
   cursor: auto;
@@ -20,13 +19,22 @@ html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button {
   margin: 0;
   padding: 0;
   text-align: left;
-  text-indent: -9999px;
   vertical-align: baseline;
   white-space: normal;
+  
+  &::before {
+    background-image: url('//www.library.arizona.edu/vendor-support/summon/dist/images/icon-chat.png');
+    background-position: center center;
+    content: "";
+    display: inline-block;
+    height: 28px;
+    width: 20px;
+    vertical-align: middle;
+  }
 }
 
 html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_online,
 html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
   background-color: transparent;
-  color: inherit;
+  color: white;
 }
