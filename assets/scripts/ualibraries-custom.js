@@ -26,9 +26,4 @@ $(document).ready(function() {
   var askUsLink = angular.element('<div class="ask-us-container"><a href="http://new.library.arizona.edu/contact" target="_blank" class="ask-us">Ask us</a></div>');
   $('.content .holdingsOnlyToggle').after(askUsLink);
   
-  /**
-   * Adds a chat button to the root Summon page
-   */
-  $('body').append('<div class="home-chat-button"><div id="libchat_07713bc057f66ebcdccd4dd1b4a2be3e"></div></div>');
-  
 }); // end $(document).ready(function(){});
