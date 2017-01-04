@@ -29,7 +29,7 @@ $(document).ready(function() {
   /**
    * Display a tooltip when the chat button is hovered over
    */
-  
+  // We have to wait for the chat button to be added to the DOM
   setTimeout(function() {
     $('.libchat_online').after('<div class="tooltip bottom fade" style="top: 33px; left: -7px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">Chat</div></div>');
     
