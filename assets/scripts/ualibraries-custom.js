@@ -1,10 +1,10 @@
 /*global $,angular*/
 $(document).ready(function() {
 
-   /**
-    * Summon search patch
-    * We lose the search without this, and the Summon API crashes in Firefox after authentication.
-    */
+  /**
+   * Summon search patch
+   * We lose the search without this, and the Summon API crashes in Firefox after authentication.
+   */
   $('.vpnBanner a').click(function(e) {
     if (window.location.hash.length) {
       e.preventDefault();
@@ -25,5 +25,16 @@ $(document).ready(function() {
    */
   var askUsLink = angular.element('<div class="ask-us-container"><a href="http://new.library.arizona.edu/contact" target="_blank" class="ask-us">Ask us</a></div>');
   $('.content .holdingsOnlyToggle').after(askUsLink);
+  
+  /**
+   * Display a tooltip when the chat button is hovered over
+   */
+  $('.libchat_online').after('<div class="tooltip bottom fade" style="top: 33px; left: -7px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">Chat</div></div>');
+  
+  $('.libchat_online').hover(function () {
+    $('.libchat_online').next('.tooltip').addClass('in');
+  }, function() {
+    $('.libchat_online').next('.tooltip').removeClass('in');
+  });
   
 }); // end $(document).ready(function(){});
