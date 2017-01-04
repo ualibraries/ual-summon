@@ -29,12 +29,15 @@ $(document).ready(function() {
   /**
    * Display a tooltip when the chat button is hovered over
    */
-  $('.libchat_online').after('<div class="tooltip bottom fade" style="top: 33px; left: -7px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">Chat</div></div>');
   
-  $('.libchat_online').hover(function () {
-    $('.libchat_online').next('.tooltip').addClass('in');
-  }, function() {
-    $('.libchat_online').next('.tooltip').removeClass('in');
-  });
+  setTimeout(function() {
+    $('.libchat_online').after('<div class="tooltip bottom fade" style="top: 33px; left: -7px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">Chat</div></div>');
+    
+    $('.libchat_online').hover(function () {
+      $('.libchat_online').next('.tooltip').addClass('in');
+    }, function() {
+      $('.libchat_online').next('.tooltip').removeClass('in');
+    });
+  }, 2000);
   
 }); // end $(document).ready(function(){});
