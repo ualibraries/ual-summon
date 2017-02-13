@@ -1,3 +1,5 @@
+@libChatId: "#libchat_07713bc057f66ebcdccd4dd1b4a2be3e";
+
 // Control the display of our custom Ask us link
 div.ask-us-container a {
   display: block;
@@ -10,7 +12,8 @@ div.ask-us-container a {
   }
 }
 
-html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button {
+// LibChat
+html @{libChatId} button {
   background-image: none;
   border: none;
   border-radius: 0;
@@ -23,8 +26,8 @@ html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button {
   white-space: normal;
 }
 
-html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_online,
-html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
+html @{libChatId} button.libchat_online,
+html @{libChatId} button.libchat_offline {
   background-color: transparent;
   color: inherit;
   display: block;
@@ -36,7 +39,7 @@ html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
   overflow: hidden;
   
   &::before {
-    background-image: url('//www.library.arizona.edu/vendor-support/summon/dist/images/icon-chat.png?1');
+    background-image: url("//www.library.arizona.edu/vendor-support/summon/dist/images/icon-chat.png?1");
     background-position: left center;
     background-repeat: no-repeat;
     content: "";
