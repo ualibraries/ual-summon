@@ -1,5 +1,7 @@
 /*global $,angular*/
 $(document).ready(() => {
+
+  const libchatId = '#libchat_07713bc057f66ebcdccd4dd1b4a2be3e'
   
   const askUsLink = angular.element('<div class="ask-us-container"><a href="http://new.library.arizona.edu/contact" target="_blank" class="ask-us">Ask us</a></div>')
 
@@ -44,6 +46,11 @@ $(document).ready(() => {
     }, () => {
       $('.libchat_online').next('.tooltip').removeClass('in')
     })
+  }, 2000)
+
+  
+  setTimeout(() => {
+    $('.linksMenu .siteLinks').append(`<li><div class="btn-group btn-group-justified"><button id="${libchatId}">Chat</button></div></li>`)
   }, 2000)
 
 })
