@@ -41,6 +41,6 @@ $(document).ready(() => {
   // Add a link to the 'Chat' page to the menu bar (http://new.library.arizona.edu/chat)
   setTimeout(() => {
     $('.vpnBanner .list-inline').prepend('<li><a role="button" class="customColorsSiteLink" target="blank" href="http://new.library.arizona.edu/chat"><span>Chat</span></a></li>')
-  })
+  }, 1000)
   
 })
