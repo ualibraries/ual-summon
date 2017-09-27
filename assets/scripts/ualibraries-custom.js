@@ -5,7 +5,7 @@ $(document).ready(() => {
 
   // Summon search patch
   // We lose the search without this, and the Summon API crashes in Firefox after authentication.
-  $('.vpnBanner a').click((e) => {
+  $('.vpnBanner .customAuthBanner a').click((e) => {
     if (window.location.hash.length) {
       
       e.preventDefault()
