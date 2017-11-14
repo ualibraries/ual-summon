@@ -1,36 +1,17 @@
 const path = require('path')
 
 module.exports = {
-  entry: './src/app.js', // string | object | array
-  // Here the application starts executing
-  // and webpack starts bundling
-
+  entry: './src/app.js',
   output: {
-    // options related to how webpack emits results
-
     path: path.resolve(__dirname, 'dist'), // string
-    // the target directory for all output files
-    // must be an absolute path (use the Node.js path module)
-
-    filename: 'bundle.js', // string
-    // the filename template for entry chunks
-
-    publicPath: 'http://ualibr-summon.s3-website-us-west-2.amazonaws.com/', // string
-    // the url to the output directory resolved relative to the HTML page
-
-    library: 'ual-summon', // string,
-    // the name of the exported library
-
-    libraryTarget: 'umd' // universal module definition
-    // the type of the exported library
+    filename: 'bundle.js',
+    publicPath: 'http://ualibr-summon.s3-website-us-west-2.amazonaws.com/',
+    library: 'ual-summon',
+    libraryTarget: 'umd'
   },
 
   module: {
-    // configuration regarding modules
-
     rules: [
-      // rules for modules (configure loaders, parser options, etc.)
-
       {
         test: /\.js?$/,
         include: [path.resolve(__dirname, 'src')],
@@ -49,30 +30,22 @@ module.exports = {
         test: /\.css/,
         use: [
           {
-            loader: 'style-loader' // creates style nodes from JS strings
+            loader: 'style-loader'
           },
           {
-            loader: 'css-loader' // translates CSS into CommonJS
+            loader: 'css-loader'
           },
           {
-            loader: 'postcss-loader' // runs CSS through PostCSS
+            loader: 'postcss-loader'
           }
         ]
       }
     ]
-
-    /* Advanced module configuration (click to show) */
   },
 
   resolve: {
-    // options for resolving module requests
-    // (does not apply to resolving to loaders)
-
     modules: ['node_modules', path.resolve(__dirname, 'app')],
-    // directories where to look for modules
-
     extensions: ['.js', '.json', '.jsx', '.css']
-    // extensions that are used
   },
 
   performance: {

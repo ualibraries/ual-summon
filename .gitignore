@@ -1,15 +1,5 @@
 node_modules
-
-/site-copy/
-
-/.sass-cache/
-
-/screenshots/
-
 /Gemfile.lock
-
 .idea
-
 .DS_Store
-
 npm-debug.log

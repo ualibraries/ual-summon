@@ -1,7 +1,7 @@
 {
-  "name": "summon",
-  "version": "2.0.0",
-  "description": "University Libraries Summon customizations",
+  "name": "ual-summon",
+  "version": "3.0.0",
+  "description": "University of Arizona Libraries Summon customizations",
   "main": "dist/bundle.js",
   "scripts": {
     "test": "standard",
