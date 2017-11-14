@@ -1,0 +1,33 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "tablet",
+      "width": 1280,
+      "height": 1024
+    }
+  ],
+  "onBeforeScript": "chromy/onBefore.js",
+  "onReadyScript": "chromy/onReady.js",
+  "scenarios": [
+    {
+      "label": "Summon search results",
+      "url": "http://arizona.summon.serialssolutions.com/search?q=Dinosaurs&fvf=ContentType%2CBook%20Review%2Ct%7CContentType%2CNewspaper%20Article%2Ct#!/search?ho=t&fvf=ContentType,Book%20Review,t%7CContentType,Newspaper%20Article,t&l=en&q=Dinosaurs",
+      "delay": 5
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "test/backstop_data/bitmaps_reference",
+    "bitmaps_test": "test/backstop_data/bitmaps_test",
+    "engine_scripts": "test/backstop_data/engine_scripts",
+    "html_report": "test/backstop_data/html_report",
+    "ci_report": "test/backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "chrome",
+  "engineFlags": [],
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}
