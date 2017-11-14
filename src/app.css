@@ -1,0 +1,50 @@
+/* Control the display of our custom Ask us link */
+div.ask-us-container a {
+  display: block;
+  padding: 20px 20px 20px 40px;
+}
+
+@media screen and (min-width: 1024px) {
+  .siteLinks .ask-us {
+    display: none;
+  }
+}
+
+/* LibChat */
+html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button {
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  cursor: auto;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  vertical-align: baseline;
+  white-space: normal;
+}
+
+html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_online,
+html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline {
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  height: 28px;
+  margin-top: 2px;
+  text-indent: 100%;
+  white-space: nowrap;
+  outline: none;
+  overflow: hidden;
+}
+
+html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_online::before,
+html #libchat_07713bc057f66ebcdccd4dd1b4a2be3e button.libchat_offline::before {
+  background-image: url('icon-chat.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+  content: '';
+  cursor: pointer;
+  display: block;
+  height: 28px;
+  width: 28px;
+}
