@@ -1,4 +1,4 @@
-# Summon customizations
+# University of Arizona Libraries Summon customizations
 
 ## Requirements
 
@@ -9,7 +9,7 @@
 Clone the repository `git clone ssh://[username]@vitae.library.arizona.edu/data1/vitae/repos/summon.git`
 
 * Run `$ yarn install` to install the Node modules.
-* Run `$yarn run build` to build the project.
+* Run `$ yarn run build` to build the project.
 * Run `$ ./deploy.sh` to deploy the project.
 
 Configure Summon to load this script in Summon Admin Console > 'Summon 2.0 External Script' > 'Custom Script Url'.
